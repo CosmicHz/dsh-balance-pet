@@ -35,7 +35,8 @@
 
 ### Windows 版 · 免 API Key 运行与音效修复
 
-- Windows 版（`大肥鱼桌宠改_D-16B`）新增 **DSH 账号凭证**支持：直接读取
+- Windows 版三个目录同时修复：`大肥鱼桌宠改_D-16B`、`原版（Windows版）`、`大肥鱼桌宠初代_D-16A`
+  （后两者是同一份脚本）。新增 **DSH 账号凭证**支持：直接读取
   `~/.dsh/.credentials.yaml` 里 `deepseek-account-platform/default` 的 `token` 与 `issuer`，
   调用 `<issuer>/api/v0/users/get_user_summary`，因此**没有 `sk-` 开头的 API Key 也能显示真实余额**。
   原有 API Key 方式（`apikey.txt`、环境变量、凭证里的 `DEEPSEEK_API_KEY`）优先级更高，保持不变。
@@ -75,7 +76,7 @@
 
 - 装了 DSH 就自动读取 `~/.dsh/.credentials.yaml` 的账号凭证，不会弹框要 Key；凭证读不到时才需要右键 →「设置 API Key…」填 `sk-` 开头的 Key。
 - 运行日志在 `pet.log`：会记录凭证来源与每次请求结果，但不记录密钥。
-- `原版（Windows版）` 与 `大肥鱼桌宠初代_D-16A` 内容相同，属早期存档版本，**不含**账号凭证支持与音效修复；推荐使用 `大肥鱼桌宠改_D-16B`。
+- `原版（Windows版）` 与 `大肥鱼桌宠初代_D-16A` 内容完全相同（同一份脚本），同样支持账号凭证与音效修复，但没有 `改_D-16B` 的米饭盆充值、音量菜单等新增功能；推荐使用 `大肥鱼桌宠改_D-16B`。
 
 ## 日常操作
 
