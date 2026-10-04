@@ -1,4 +1,4 @@
-# DSH 余额宠物 · 双平台
+# DSH 余额宠物 · Windows / macOS
 
 贴在桌面上的小挂件：角色举着一块平板，实时显示你的 DeepSeek（DSH）余额。
 
