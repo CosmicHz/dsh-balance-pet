@@ -5,14 +5,15 @@
 余额每**下降 0.01 元**，她红闪 + 震动 + 播放打击音效，头顶飘出 `-0.01`，0.2 秒一次串成一条；
 余额**上升（充值）**时，屏幕右侧掉下一盆米饭，把它拖到角色身上才一次性入账。
 
-本仓库包含**两个独立实现**，按你的系统选一个：
+本仓库有**两个自研实现**（Windows / macOS），另有一个**社区维护的 DSH 网页插件版**，按你的环境选：
 
 | 平台 | 当前版本 | 技术栈 | 说明 |
 | --- | --- | --- | --- |
 | 🪟 **Windows** | **v3**（`大肥鱼桌宠改_D-16BVM`） | PowerShell 5.1 + 内嵌 C# | 见下文「Windows 版」 |
 | 🍎 **macOS** | **v1.3.1** | Swift + AppKit | 见下文「macOS 版」 |
+| 🌐 **DSH 网页插件** | 社区维护 | DSH bundle（JS） | 由 [@YCTS-otree](https://github.com/YCTS-otree) 移植并维护，见 [dsh-plugin 分支](https://github.com/YCTS-otree/VK-1/tree/dsh-plugin) |
 
-两个版本**互不依赖**，各自独立运行；都只访问 DeepSeek 官方接口，不联网上传任何数据。
+Windows 版与 macOS 版**互不依赖**，各自独立运行；都只访问 DeepSeek 官方接口，不联网上传任何数据。网页插件版是第三方移植，见下。
 
 ---
 
@@ -232,6 +233,20 @@ open "dist/DSH大肥鱼桌宠.app"
 
 ---
 
+## 🌐 DSH 网页插件版（社区维护）
+
+由 [@YCTS-otree](https://github.com/YCTS-otree) 把 `大肥鱼桌宠改_D-16BVM` 移植成了
+**DSH（DeepSeek Harness）网页插件**，作为 DSH 的一个 bundle 运行：
+
+**→ [`YCTS-otree/VK-1` · `dsh-plugin` 分支](https://github.com/YCTS-otree/VK-1/tree/dsh-plugin)**
+
+- 逐分结算（0.01 / 0.2s / 单轮 40 次上限）、四种表情的优先级状态机、掉盆按落高的弹跳、
+  铁盆扣头与双击取下、火控雷达名牌与 10s 批量锁定 —— 行为按本仓库的实现对齐
+- 额外支持与 DSH 里其它余额显示插件**一键互切**（热生效，不需要刷新页面）
+- ⚠️ **形态差异**：网页插件没有原生置顶窗口、托盘和**屏幕角吸附**（只能吸附窗口角）；
+  透明像素点击穿透仍然保留
+- 该分支**由 @YCTS-otree 独立维护**，不属于本仓库内容 —— 使用问题和建议请到他的仓库反馈
+
 ## 贡献者
 
 | 平台 | 作者 | 说明 |
@@ -239,6 +254,7 @@ open "dist/DSH大肥鱼桌宠.app"
 | 🪟 Windows 版（v1 → v3） | [@VKmich16](https://github.com/VKmich16) | 本仓库维护者 |
 | 🍎 macOS 版 | [@Andromedahk](https://github.com/Andromedahk) | 从 Windows 原版移植到 Swift + AppKit，独立维护 |
 | 🪟 Windows 旧版修复 | [@sa2360](https://github.com/sa2360) | DSH 账号凭证支持 · 音效改用绝对路径与返回码判断（[PR #2](https://github.com/VKmich16/VK-1/pull/2)）|
+| 🌐 DSH 网页插件版 | [@YCTS-otree](https://github.com/YCTS-otree) | 把 D-16BVM 移植成 DSH bundle，独立维护（[dsh-plugin 分支](https://github.com/YCTS-otree/VK-1/tree/dsh-plugin)）|
 | 上游 Windows 原版 | — | 见 `原版（Windows版）/` |
 
 ## 许可
