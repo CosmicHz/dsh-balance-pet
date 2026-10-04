@@ -245,9 +245,9 @@ open "dist/DSH大肥鱼桌宠.app"
 
 本仓库采用 **MIT 许可**（见 [`LICENSE`](LICENSE)），覆盖：
 
-- **程序代码** —— 各版本目录下的 `.ps1` / `.vbs` / `.cmd`
+- **程序代码** —— `大肥鱼桌宠改_D-16BVM/` 与 `大肥鱼桌宠改_D-16B/` 下的 `.ps1` / `.vbs` / `.cmd`
 - **角色美术** —— `大肥鱼桌宠改_D-16BVM/` 下的 `sprite.png`、`sprites/*.png`、`rice.png`、`iron_bowl.png`
-- **音效** —— `hit.mp3`、`feed.mp3`
+- **音效** —— `大肥鱼桌宠改_D-16BVM/` 下的 `hit.mp3`、`feed.mp3`
 
 也就是说：**可以自由使用、修改、再分发，甚至商用**，只要保留版权声明即可。
 
@@ -258,5 +258,6 @@ open "dist/DSH大肥鱼桌宠.app"
 | `原版（Windows版）/` | 上游 Windows 原版，非本项目原创 |
 | `大肥鱼桌宠初代_D-16A/` | 内容与上游原版相同，仅作版本起点存档 |
 | `dsh-balance-pet-macos/` | 由 [@Andromedahk](https://github.com/Andromedahk) 独立维护，许可以其[独立说明](dsh-balance-pet-macos/README.md)为准 |
+| `output/` | 同上，macOS 版的素材生成记录（提示词与输出图）|
 
 > 想把这里的素材用在自己的项目（包括移植到别的平台）：注明来源即可，无需另行询问。
