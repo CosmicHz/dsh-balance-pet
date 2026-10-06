@@ -272,6 +272,6 @@ macOS 版基于本仓库中的 Windows 原版移植，感谢原作者。原版�
 | `原版（Windows版）/` | 最初发布的 Windows 原版（已经过社区改进；zip 为最初发布的原样压缩包），非本项目原创 |
 | `大肥鱼桌宠初代_D-16A/` | 8 个源文件与 `原版（Windows版）/` 目录相同，另含一份说明 README，仅作版本起点存档 |
 | `dsh-balance-pet-macos/` | 由 [@Andromedahk](https://github.com/Andromedahk) 独立维护，许可以其[独立说明](dsh-balance-pet-macos/README.md)为准 |
-| `output/` | 同上，macOS 版的素材生成记录（提示词与输出图） |
+| `dsh-balance-pet-macos/artwork/` | 同上，macOS 版的素材生成记录（提示词与输出图） |
 
 > 想把这里的素材用在自己的项目（包括移植到别的平台）：注明来源即可，无需另行询问。
